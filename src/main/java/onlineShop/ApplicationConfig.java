@@ -27,15 +27,11 @@ public class ApplicationConfig {
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-                        // change to your own RDS_Endpoint
-                        // change the username and password
-//		dataSource.setUrl("jdbc:mysql://laiproject.cav039rjdbil.us-east-2.rds.amazonaws.com:3306/ecommerce?serverTimezone=UTC");
-//		dataSource.setUsername("admin");
-//		dataSource.setPassword("12345678");
+                      
 		
-		dataSource.setUrl("jdbc:mysql://laiproject-instance.c00cd3ngstgp.us-east-2.rds.amazonaws.com:3306/ecommerce?serverTimezone=UTC");
-		dataSource.setUsername("admin");
-		dataSource.setPassword("Laioffer12345");
+		dataSource.setUrl("xxxxxxxx");
+		dataSource.setUsername("xxxxx");
+		dataSource.setPassword("xxxxxxxxxx");
 
 		return dataSource;
 	}
